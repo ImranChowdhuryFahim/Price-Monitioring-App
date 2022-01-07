@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433270138579",
+    "project_id": "pricemonitoringapp-eda64",
+    "storage_bucket": "pricemonitoringapp-eda64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433270138579:android:40ab50f917debb396f9626",
+        "android_client_info": {
+          "package_name": "com.networkproject.pricemonitoringapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433270138579-h65g70qijitht1446a4omicbo98kbmef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDe_H5bOetCiWdrpd5qdRRKAaWB5Sf2-_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433270138579-h65g70qijitht1446a4omicbo98kbmef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
