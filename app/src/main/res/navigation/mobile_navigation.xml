@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_product_list">
+
+    <fragment
+        android:id="@+id/nav_add_product"
+        android:name="com.networkproject.pricemonitoringapp.ui.ProductList.HomeFragment"
+        android:label="@string/menu_add_product"
+        tools:layout="@layout/fragment_add_product" />
+
+    <fragment
+        android:id="@+id/nav_product_list"
+        android:name="com.networkproject.pricemonitoringapp.ui.AddProduct.AddProductFragment"
+        android:label="@string/menu_product_list"
+        tools:layout="@layout/fragment_product_list" />
+
+    <fragment
+        android:id="@+id/nav_complain"
+        android:name="com.networkproject.pricemonitoringapp.ui.Complain.ComplainFragment"
+        android:label="@string/menu_complain"
+        tools:layout="@layout/fragment_complain" />
+
+    <fragment
+        android:id="@+id/nav_pending_complaints"
+        android:name="com.networkproject.pricemonitoringapp.ui.Complain.ComplainFragment"
+        android:label="@string/menu_pending_complaints"
+        tools:layout="@layout/fragment_pending_complaints" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.networkproject.pricemonitoringapp.ui.Complain.ComplainFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+
+</navigation>
