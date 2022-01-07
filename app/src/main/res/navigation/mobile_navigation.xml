@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/nav_add_product"
-        android:name="com.networkproject.pricemonitoringapp.ui.ProductList.HomeFragment"
+        android:name="com.networkproject.pricemonitoringapp.ui.AddProduct.AddProductFragment"
         android:label="@string/menu_add_product"
         tools:layout="@layout/fragment_add_product" />
 
     <fragment
         android:id="@+id/nav_product_list"
-        android:name="com.networkproject.pricemonitoringapp.ui.AddProduct.AddProductFragment"
+        android:name="com.networkproject.pricemonitoringapp.ui.ProductList.ProductListFragment"
         android:label="@string/menu_product_list"
         tools:layout="@layout/fragment_product_list" />
 
@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/nav_pending_complaints"
-        android:name="com.networkproject.pricemonitoringapp.ui.Complain.ComplainFragment"
+        android:name="com.networkproject.pricemonitoringapp.ui.PendingComplaints.PendingComplaintsFragment"
         android:label="@string/menu_pending_complaints"
         tools:layout="@layout/fragment_pending_complaints" />
 
     <fragment
         android:id="@+id/nav_logout"
-        android:name="com.networkproject.pricemonitoringapp.ui.Complain.ComplainFragment"
+        android:name="com.networkproject.pricemonitoringapp.ui.Logout.LogoutFragment"
         android:label="@string/menu_logout"
         tools:layout="@layout/fragment_logout" />
 

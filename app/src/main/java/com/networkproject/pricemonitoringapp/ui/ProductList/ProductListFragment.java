@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.networkproject.pricemonitoringapp.R;
 
-public class HomeFragment extends Fragment {
+public class ProductListFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,

@@ -5,6 +5,7 @@ import static com.networkproject.pricemonitoringapp.LoginActivity.IS_LOGGED_IN;
 import static com.networkproject.pricemonitoringapp.LoginActivity.SHARED_PREFS;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Context;
 import android.content.Intent;
@@ -22,6 +23,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_splash);
 
         sharedPref = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
