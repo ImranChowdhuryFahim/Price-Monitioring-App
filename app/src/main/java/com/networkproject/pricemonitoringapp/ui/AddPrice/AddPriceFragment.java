@@ -105,7 +105,7 @@ public class AddPriceFragment extends Fragment {
                         wholeSellerPriceInput.getText().toString().trim(),
                         supplyInput.getText().toString().trim());
 
-                databaseReferenceWrite.child("this_week").child(productType).child(String.valueOf(System.currentTimeMillis())).setValue(priceModel).addOnCompleteListener(new OnCompleteListener<Void>() {
+                databaseReferenceWrite.child(productType).child("this_week").child(String.valueOf(System.currentTimeMillis())).setValue(priceModel).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(getActivity(),"Price Added",Toast.LENGTH_SHORT).show();

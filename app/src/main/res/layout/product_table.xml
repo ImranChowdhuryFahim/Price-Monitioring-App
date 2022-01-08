@@ -1,52 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TableLayout
+        android:id="@+id/table_heading_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="40dp"
-        android:background="@android:color/white">
+        android:background="@drawable/table_border"
+        >
 
-        <!-- Table Data -->
-
-        <TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/marketName"
+                style="@style/table_row_item"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="@string/row1Name"
-                android:textSize="12sp" />
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/farmerPrice"
+                style="@style/table_row_item"
+                android:layout_width="0dp"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textAlignment="center" />
+            <TextView
+                android:id="@+id/wholeSellerPrice"
+                style="@style/table_row_item"
+                android:layout_width="0dp"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textAlignment="center" />
 
             <TextView
+                android:id="@+id/sellerPrice"
+                style="@style/table_row_item"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="@string/row1Age"
-                android:textSize="12sp" />
+                android:layout_column="1"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textAlignment="center" />
 
             <TextView
+                android:id="@+id/supply"
+                style="@style/table_row_item"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                android:padding="10sp"
-                android:text="@string/row1Id"
-                android:textSize="12sp" />
-
+                android:layout_column="2"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:textAlignment="center" />
         </TableRow>
-
-
-
     </TableLayout>
 
-</LinearLayout >
+</LinearLayout>

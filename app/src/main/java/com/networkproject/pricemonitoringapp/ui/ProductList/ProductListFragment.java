@@ -1,6 +1,7 @@
 package com.networkproject.pricemonitoringapp.ui.ProductList;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,6 +23,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.networkproject.pricemonitoringapp.ProductTableActivity;
 import com.networkproject.pricemonitoringapp.R;
 import com.networkproject.pricemonitoringapp.ViewHolder.ProductViewHolder;
 import com.networkproject.pricemonitoringapp.model.ProductModel;
@@ -78,6 +80,12 @@ public class ProductListFragment extends Fragment {
             protected void onBindViewHolder(@NonNull ProductViewHolder holder, int position, @NonNull ProductModel model) {
                 holder.productName.setText(model.getName());
                 Picasso.get().load(model.getImageLink()).into(holder.productImage);
+                holder.linearLayout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(getActivity(),ProductTableActivity.class));
+                    }
+                });
             }
 
 
@@ -109,6 +117,7 @@ public class ProductListFragment extends Fragment {
             protected void onBindViewHolder(@NonNull ProductViewHolder holder, int position, @NonNull ProductModel model) {
                 holder.productName.setText(model.getName());
                 Picasso.get().load(model.getImageLink()).into(holder.productImage);
+                startActivity(new Intent(getActivity(),ProductTableActivity.class));
             }
 
 

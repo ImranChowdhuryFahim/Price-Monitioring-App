@@ -15,21 +15,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PriceMonitoringApp">
         <activity
+            android:name=".ProductTableActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.PriceMonitoringApp.NoActionBar"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PriceMonitoringApp.NoActionBar" />
         <activity
             android:name=".RegistrationActivity"
             android:exported="true"
             android:label="Registration"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.PriceMonitoringApp.SplashScreen"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PriceMonitoringApp.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,11 +42,10 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:label="Login"/>
+            android:label="Login" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
