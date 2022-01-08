@@ -10,13 +10,15 @@
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/activity_splash.xml" value="0.13072916666666667" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/app_bar_home.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/content_home.xml" value="0.14479166666666668" />
-        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_add_product.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_add_product.xml" value="0.264" />
+        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_add_region.xml" value="0.26132246376811596" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_complain.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_logout.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_pending_complaints.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_product_list.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_slideshow.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/nav_header_home.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/product_row.xml" value="0.26132246376811596" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/menu/home.xml" value="0.27447916666666666" />
       </map>

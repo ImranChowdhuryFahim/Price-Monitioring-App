@@ -92,16 +92,16 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (checkConnectivity()){
-                } else {
-                    nointernetp();
-                    return;
-                }
-
-                if(!validateEmail()  |  !validatePass() | !validateAccountType())
-                {
-                    return;
-                }
+//                if (checkConnectivity()){
+//                } else {
+//                    nointernetp();
+//                    return;
+//                }
+//
+//                if(!validateEmail()  |  !validatePass() | !validateAccountType())
+//                {
+//                    return;
+//                }
                 startActivity(new Intent(LoginActivity.this,HomeActivity.class));
             }
         });
