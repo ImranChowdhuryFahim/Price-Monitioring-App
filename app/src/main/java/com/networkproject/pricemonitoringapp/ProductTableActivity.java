@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -21,6 +22,8 @@ import com.networkproject.pricemonitoringapp.model.PriceModel;
 import com.networkproject.pricemonitoringapp.model.ProductModel;
 import com.squareup.picasso.Picasso;
 
+import java.util.Locale;
+
 public class ProductTableActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
@@ -28,21 +31,33 @@ public class ProductTableActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     private FirebaseRecyclerAdapter<PriceModel, TableRowViewHolder> adapter;
+    private String product;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_table);
 
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Bundle b = getIntent().getExtras();
+        if(b!=null){
+            String val = b.getString("name");
+            product = val.toLowerCase();
+            getSupportActionBar().setTitle(val.toUpperCase());
+        }
+
         recyclerView = findViewById(R.id.table_recycler_view);
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("rice").child("this_week");
+        databaseReference = firebaseDatabase.getReference(product).child("this_week");
         databaseReference.keepSynced(true);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(ProductTableActivity.this);
         layoutManager.setReverseLayout(true);
         layoutManager.setStackFromEnd(true);
         recyclerView.setLayoutManager(layoutManager);
+
+
 
 
 

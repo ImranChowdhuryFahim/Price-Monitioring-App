@@ -37,7 +37,6 @@ public class ProductListFragment extends Fragment {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     private SearchView productSearch;
-    private SharedPreferences sharedPref;
 
     private FirebaseRecyclerAdapter<ProductModel, ProductViewHolder> adapter;
 
@@ -83,7 +82,9 @@ public class ProductListFragment extends Fragment {
                 holder.linearLayout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(getActivity(),ProductTableActivity.class));
+                        Intent detailIntent = new Intent(getActivity(),ProductTableActivity.class);
+                        detailIntent.putExtra("name",model.getName().toString());
+                        startActivity(detailIntent);
                     }
                 });
             }
@@ -117,7 +118,14 @@ public class ProductListFragment extends Fragment {
             protected void onBindViewHolder(@NonNull ProductViewHolder holder, int position, @NonNull ProductModel model) {
                 holder.productName.setText(model.getName());
                 Picasso.get().load(model.getImageLink()).into(holder.productImage);
-                startActivity(new Intent(getActivity(),ProductTableActivity.class));
+                holder.linearLayout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent detailIntent = new Intent(getActivity(),ProductTableActivity.class);
+                        detailIntent.putExtra("name",model.getName().toString());
+                        startActivity(detailIntent);
+                    }
+                });
             }
 
 

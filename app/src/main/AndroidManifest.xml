@@ -16,6 +16,7 @@
         android:theme="@style/Theme.PriceMonitoringApp">
         <activity
             android:name=".ProductTableActivity"
+            android:parentActivityName=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
