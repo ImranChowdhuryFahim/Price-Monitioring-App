@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
 
         sharedPref = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
         isLoggedIn = sharedPref.getBoolean(IS_LOGGED_IN,false);
-        accountType = sharedPref.getString(ACCOUNT_TYPE,null);
+
 
 
         new CountDownTimer(2000, 1000){

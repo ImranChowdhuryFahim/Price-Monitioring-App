@@ -109,6 +109,7 @@ public class AddPriceFragment extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         Toast.makeText(getActivity(),"Price Added",Toast.LENGTH_SHORT).show();
+                        marketName.setText("");
                         farmerPriceInput.setText("");
                         sellerPriceInput.setText("");
                         wholeSellerPriceInput.setText("");
