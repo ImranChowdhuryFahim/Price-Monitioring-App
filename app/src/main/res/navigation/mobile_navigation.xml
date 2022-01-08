@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_add_product" />
 
     <fragment
+        android:id="@+id/nav_add_price"
+        android:name="com.networkproject.pricemonitoringapp.ui.AddPrice.AddPriceFragment"
+        android:label="@string/menu_add_price"
+        tools:layout="@layout/fragment_add_price" />
+
+    <fragment
         android:id="@+id/nav_product_list"
         android:name="com.networkproject.pricemonitoringapp.ui.ProductList.ProductListFragment"
         android:label="@string/menu_product_list"
