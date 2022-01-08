@@ -17,6 +17,19 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="col1">Name</string>
+    <string name="col2">Age</string>
+    <string name="col3">id</string>
+    <string name="row1Name">Miad</string>
+    <string name="row1Age">23</string>
+    <string name="row1Id">118</string>
+    <string name="row2Name">Hasan</string>
+    <string name="row2Age">23</string>
+    <string name="row2Id">118</string>
+    <string name="row3Name">Imran</string>
+    <string name="row3Age">23</string>
+    <string name="row3Id">118</string>
+
     <string name="menu_add_product">Add Product</string>
     <string name="menu_product_list">Product List</string>
     <string name="menu_logout">Logout</string>
