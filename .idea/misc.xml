@@ -6,13 +6,15 @@
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/account_type.xml" value="0.26132246376811596" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/activity_home.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/activity_main.xml" value="0.26132246376811596" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/activity_registration.xml" value="0.2" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/activity_splash.xml" value="0.13072916666666667" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/app_bar_home.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/content_home.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_add_price.xml" value="0.4" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_add_product.xml" value="0.264" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_add_region.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_complain.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_complain.xml" value="0.2" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_logout.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_pending_complaints.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/88014/AndroidStudioProjects/PriceMonitoringApp/app/src/main/res/layout/fragment_product_list.xml" value="0.26856884057971014" />

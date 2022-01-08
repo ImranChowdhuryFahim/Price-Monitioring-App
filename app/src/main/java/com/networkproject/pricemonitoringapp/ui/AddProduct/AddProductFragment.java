@@ -86,6 +86,8 @@ public class AddProductFragment extends Fragment {
                                             databaseReference.child("products").child(id).setValue(product);
                                             databaseReference.child(productNameInput.getText().toString().trim().toLowerCase()).child("imageLink").setValue(downloadedImage.toString());
                                             progressDialog.dismiss();
+                                            productNameInput.setText("");
+                                            productImage.setImageURI(null);
                                             Toast.makeText(getActivity(), "Item is added successfully!", Toast.LENGTH_SHORT).show();
                                         }
                                     });
@@ -129,8 +131,16 @@ public class AddProductFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==1)
         {
-            selectedImage=data.getData();
-            productImage.setImageURI(selectedImage);
+
+            if(data==null)
+            {
+                Toast.makeText(getActivity(),"No Image selected",Toast.LENGTH_SHORT).show();
+            }
+            else{
+                selectedImage=data.getData();
+                productImage.setImageURI(selectedImage);
+            }
+
 
 
         }
